@@ -1,0 +1,1 @@
+This is the folder where we are going to upload our classifier/recognizer.
