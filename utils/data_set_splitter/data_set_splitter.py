@@ -4,11 +4,11 @@ from PIL import Image
 import random
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-d", "--imagedirectory", required=False,
+ap.add_argument("-d", "--imagedirectory", required=True,
                 help="Directory where image categories are")
 args = vars(ap.parse_args())
 
-image_directory = "/home/felipe/Projects/machineLearning/datasets/food-101/images" ##args["imagedirectory"]
+image_directory = args["imagedirectory"]
 image_directory_splitted = image_directory + "/splitted"
 image_directory_splitted_training = image_directory_splitted + "/training"
 image_directory_splitted_test = image_directory_splitted + "/test"
