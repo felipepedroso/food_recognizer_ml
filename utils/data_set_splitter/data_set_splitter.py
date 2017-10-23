@@ -1,6 +1,10 @@
 import argparse
 import os
 from PIL import Image
+
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+
 import random
 
 ap = argparse.ArgumentParser()
